@@ -1,0 +1,25 @@
+.xebra {
+    background-color: #000000;
+}
+
+body {
+    background-color: #000000;
+}
+
+.xebra__header {
+    color: #FFFFFF;
+    font-size: 36px;
+    position: fixed;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+    background-color: purple;
+    opacity: .5;
+    padding: 0 20px;
+}
+
+.xebra__title {
+    font-family: 'Ubuntu', sans-serif;
+    color: #FFFFFF;
+}
+
