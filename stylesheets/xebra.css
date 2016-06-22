@@ -1,26 +1,78 @@
+@font-face {
+  	font-family: 'Ailerons';
+  	src: url('../fonts/Ailerons-Typeface.otf');
+}
+
+html,
+body,
+main {
+	height: 100%;
+}
+
 .xebra {
-    background-color: #000000;
+    background-color: #FFFFFF;
+    display: flex;
+}
+
+.logo__container {
+	margin: 0 auto;
+}
+
+.logo__container:before {
+	font-family: 'Ailerons';
+}
+
+.logo__container:after {
+	font-family: 'Ailerons';
 }
 
 body {
-    background-color: #000000;
+    background-color: #FFFFFF;
 }
 
-.xebra__header {
-    color: #FFFFFF;
-    font-size: 36px;
-    position: fixed;
-    top: 50%;
-    right: 50%;
-    transform: translate(50%, -50%);
-    background-color: #7F1BD1;
-    padding: 0 20px;
-    border-radius: 10px;
+.main {
+    display: inline-block;
 }
 
-.xebra__title {
-    font-family: 'Ubuntu', sans-serif;
-    color: #FFFFFF;
-    text-align: center;
+@media (min-width: 801px) {
+
+	.xebra {
+		align-items: center;
+	}
+
+	.logo__container {
+		width: 800px;
+		height: 120px;
+		display: flex;
+		justify-content: center;
+	}
+
+	.logo__image {
+		flex-basis: 170px;
+	}
+
+	.logo__container:before {
+		font-size: 90px;
+		content: "Xebra";
+	}
+
+	.logo__container:after {
+		font-size: 90px;
+		content: "Labs";
+	}
 }
 
+@media (max-width: 800px) {
+	.logo__image {
+		display: block;
+		margin: 0 auto;
+		padding-top: 20px;
+		width: 60px;
+	}
+
+	.logo__container:before {
+		font-size: 32px;
+		content: "Xebra Labs";
+		display: block;
+	}
+}
