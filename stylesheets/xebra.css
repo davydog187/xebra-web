@@ -10,7 +10,6 @@ main {
 }
 
 .xebra {
-    background-color: #FFFFFF;
     display: flex;
 }
 
@@ -26,21 +25,45 @@ main {
     font-family: 'Ailerons';
 }
 
+.logo__container {
+    position: relative;
+    color: #FFFFFF;
+}
+
+.contact__link,
+.message {
+    font-size: 14px;
+    color: #FFFFFF;
+}
+
+.contact__link:hover {
+    color: #6BB6CE;
+}
+
+.message {
+    top: 100%;
+    padding-top: 20px;
+    font-family: 'Raleway', sans-serif;
+    line-height: 20px;
+}
+
+
 body {
     background-color: #FFFFFF;
 }
 
-.main {
-    display: inline-block;
-}
-
 @media (min-width: 801px) {
 
+
     .xebra {
-        align-items: center;
+        background: url(../images/jungle-bottom-4.png), url(../images/jungle-bottom-3.png), url(../images/jungle-bottom-2.png), url(../images/jungle-bottom-1.png), url(../images/zebra-stripes-purple.png);
+        background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
+        background-position: bottom left, bottom left, bottom left, bottom left;
+        background-size: cover, cover, cover, cover;
     }
 
     .logo__container {
+        margin-top: 40px;
         width: 800px;
         height: 120px;
         display: flex;
@@ -60,9 +83,18 @@ body {
         font-size: 90px;
         content: "Labs";
     }
+
+    .message {
+        border-top: 1px solid #6BB6CE;
+        position: absolute;
+    }
 }
 
 @media (max-width: 800px) {
+    .xebra {
+        background: url(../images/zebra-stripes-purple.png);
+    }
+
     .logo__image {
         display: block;
         margin: 0 auto;
@@ -71,8 +103,15 @@ body {
     }
 
     .logo__container:before {
+        text-align: center;
         font-size: 60px;
         content: "Xebra Labs";
         display: block;
+    }
+
+    .message {
+        margin: 0 auto;
+        margin-top: 40px;
+        width: 70%;
     }
 }
