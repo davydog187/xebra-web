@@ -87,6 +87,8 @@ body {
     .message {
         border-top: 1px solid #6BB6CE;
         position: absolute;
+        right: 0;
+        width: 280px;
     }
 }
 
